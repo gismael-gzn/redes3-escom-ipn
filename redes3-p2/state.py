@@ -95,12 +95,25 @@ class state(object):
         self.add_agent(alias, ip, snmp_v, community, port)
         
 
+    #p2
+    def p2_qry(self, alias:str):
+        if not self.alias_exists(alias):
+            print(bundle.Msg.not_exists_err)
+            return
+        
+        data = dict()
+        for names,oids in zip(bundle.p2.varnames.arr, bundle.p2.oids.arr):
+            data[names] = self.__qry_agent__(alias, oids)
+
+        return data
+
     def __qry_agent__(self, alias:str, oid:str):
         if alias not in self.agents:
             print(bundle.Msg.not_exists_err)
             return
 
         args = self.agents[alias]
+            
         return consultaSNMP(args[bundle.keys.com], args[bundle.keys.ip], oid, args[bundle.keys.port])
 
     def str_agent(self, alias:str):
