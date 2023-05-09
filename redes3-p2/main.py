@@ -274,6 +274,8 @@ def p2_poll(alias:str, secs:int):
         data = f'N'
         for vals in polled.values():
             data = f'{data}:{vals}'
+
+        print(data)
         
         t_final = datetime.datetime.now()
         t_final = int(t_final.timestamp())
