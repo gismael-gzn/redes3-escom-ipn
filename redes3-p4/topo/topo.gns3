@@ -455,6 +455,11 @@
                             "type": "tap"
                         },
                         {
+                            "name": "tap1",
+                            "special": false,
+                            "type": "tap"
+                        },
+                        {
                             "name": "wlp1s0",
                             "special": false,
                             "type": "ethernet"

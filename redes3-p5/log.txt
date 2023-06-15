@@ -1,0 +1,11 @@
+NET-SNMP version 5.9.3
+2023-06-14 19:13:04 <UNKNOWN> [UDP: [192.168.1.1]:37505->[192.168.1.2]:162]:
+DISMAN-EVENT-MIB::sysUpTimeInstance = Timeticks: (89309) 0:14:53.09	SNMPv2-MIB::snmpTrapOID.0 = OID: IF-MIB::linkDown	IF-MIB::ifIndex.3 = INTEGER: 3	IF-MIB::ifDescr.3 = STRING: eth1	IF-MIB::ifAdminStatus.3 = INTEGER: down(2)	IF-MIB::ifOperStatus.3 = INTEGER: down(2)
+Email enviado!
+Email enviado!
+2023-06-14 19:13:31 <UNKNOWN> [UDP: [192.168.1.1]:59749->[192.168.1.2]:162]:
+DISMAN-EVENT-MIB::sysUpTimeInstance = Timeticks: (92093) 0:15:20.93	SNMPv2-MIB::snmpTrapOID.0 = OID: IF-MIB::linkUp	IF-MIB::ifIndex.3 = INTEGER: 3	IF-MIB::ifDescr.3 = STRING: eth1	IF-MIB::ifAdminStatus.3 = INTEGER: up(1)	IF-MIB::ifOperStatus.3 = INTEGER: up(1)
+Email enviado!
+Email enviado!
+2023-06-14 19:14:58 NET-SNMP version 5.9.3 Stopped.
+Stopping snmptrapd

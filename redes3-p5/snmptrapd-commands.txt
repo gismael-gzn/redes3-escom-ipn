@@ -1,0 +1,12 @@
+instalar:
+sudo dnf install perl-Net-SSLeay
+sudo dnf install perl-IO-Socket-SSL
+sudo dnf install perl-Crypt-SSLeay
+
+
+Para generar el archivo del daemon /etc/snmp/snmptrapd.conf
+
+sudo snmptrapd -f -Lo -c /etc/snmp/snmptrapd.conf
+snmptrap -v 1 -c comTrap localhost '1.2.3.4.5.6' 'localhost' 3 0 '' IF-MIB::ifIndex i 1
+
+snmptrap -v 1 -c comTrap <to> <oid> <from> <code: 0-5> <??> <timestamp> <Mib object> <integer "i" | string "s"> "<value>"
